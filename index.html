@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPW - Liga MX Layout</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/campeones.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <span class="logo-icon">🇲🇽⚽🏆</span>
+            <h1 class="site-title">Liga MX</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown">
+            <a href="#">Simulador</a>
+            <ul class="dropdown-content">
+                   <li><a href="simulador_libre.html">Simulador libre</a></li>
+                   <li><a href="#">Simulador con quiniela</a></li>
+                   </ul>
+            </li>
+            <li><a href="ejercicios/quinela.html">Quiniela</a></li>
+            <li><a href="xi_historico.html">Tu propio XI histórico</a></li>
+            <li><a href="enfrentamiento_directo.html">Enfrentamiento directo</a></li>
+            <li class="dropdown">
+                <a href="#">Internacional ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="sudamericana.html">Sudamericana</a></li>
+                    <li><a href="libertadores.html">Libertadores</a></li>
+                    <li><a href="concachampions.html">Concachampions</a></li>
+                </ul>
+            </li>
+            <li><a href="liga-mx/index2.html">Posiciones</a></li>
+            <li><a href="Formulario_de_registro.php">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="layout-principal">
+        <aside class="sidebar">
+            <h3>Derrota mexicana</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aOepWJeb7bQ?si=OVk76hJeAkgl5S08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <ul>
+                <li>FMF</li>
+                <li>Concacaf</li>
+            </ul>
+            <div class="info-box">
+                <span class="globe-icon">🦅</span>
+                <p>Dona para la realizacion de un simulador</p>
+                <img src="img/toros.png" alt="Toros" class="main-image">
+                <img src="img/tecos.png" alt="Tecos" class="main-image">
+            </div>
+        </aside>
+
+        <div class="contenido-derecha">
+            <section class="seccion-principal">
+                <h2>Bienvenido</h2>
+                <p>Este es un sitio web dedicado a la gloriosa liga BBVA bancomer.</p>
+                <p>El proyecto sera un repositorio sobre la liga mx incluyendo datos historicos, tablas generales, tabla historica, datos curiosos, historial de juegos, titulos, finales, logros en torneos internacionales.</p>
+                <div class="media-container">
+                    <img src="img/principal.jpg" alt="Imagen principal" class="main-image">
+                </div>
+                <p>Realiza tus quinielas para jugar con amigos, mantente al tanto de la tabla de posiciones y descubre un poco mas de la primera division de la liga profsional de futbol mexicano.</p>
+                <a href="conocenos.html" target="_blank" class="btn-enlace">Conoce a nuestro equipo</a>
+                <a href="ejercicio2.php" target="_blank" class="btn-enlace">Soporte interno</a>
+           
+                <a href="https://www.ameshop.com.mx/?utm_source=google&utm_medium=cpc&utm_campaign=aw_ameshop_ecomm_do_sem_brand_terms_aon&gad_source=1&gad_campaignid=23441654801&gbraid=0AAAAABsbd6zVuZ_niI8-sm8CA8GUo9hhF&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpfRdYY8nhwkSqMnHHahSr5kdP9SOflcwghulbsO0ZtAOIcSa4-K7k0aAvmnEALw_wcB" target="_blank" class="btn-enlace">Productos chingones del America</a>
+            </section>
+            <article class="articulo-contenido">
+                <h2>¿Qué es la Liga MX?</h2>
+                <p>La Primera División de México también conocida simplemente como Liga MX o por motivos de patrocinio Liga BBVA MX es la máxima categoría masculina del sistema de ligas de México y la principal competición de clubes del país. Desde el año 2012 cuenta con una organización autónoma respecto a la Federación Mexicana de Fútbol. Se juegan dos torneos cortos por ciclo anual futbolístico (cada uno con su campeón) denominados Apertura y Clausura (en ese orden), antes llamados Invierno y Verano respectivamente. El campeonato se define por medio de una fase final posterior a cada fase regular, conocida como liguilla.</p>
+            </article>
+
+            <section class="campeones" id="campeones" aria-labelledby="camp-titulo">
+                <h2 id="camp-titulo">🏆 Campeones de la Liga MX</h2>
+                <p class="camp-sub">Elige torneo de clausura o apertura y recorre cada campeon con las flechas.</p>
+
+                <div class="camp-tabs" role="tablist" aria-label="Tipo de torneo">
+                    <button class="camp-tab activa" role="tab" aria-selected="true" data-tipo="apertura">Campeones de Apertura <span class="camp-cuenta"></span></button>
+                    <button class="camp-tab" role="tab" aria-selected="false" data-tipo="clausura">Campeones de Clausura <span class="camp-cuenta"></span></button>
+                </div>
+
+                <div class="camp-escenario">
+                    <button class="camp-flecha" id="camp-prev" aria-label="Campeones anteriores">&#8249;</button>
+                    <div class="camp-ventana">
+                        <div class="camp-pista" id="camp-pista" aria-live="polite"></div>
+                    </div>
+                    <button class="camp-flecha" id="camp-next" aria-label="Campeones siguientes">&#8250;</button>
+                </div>
+
+                <div class="camp-pie">
+                    <span id="camp-rango"></span>
+                    <div class="camp-barra"><span id="camp-progreso"></span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Liga BBVA. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/campeones.js"></script>
+</body>
+</html>
